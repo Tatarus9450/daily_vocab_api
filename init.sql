@@ -25,3 +25,7 @@ INSERT INTO words (word, definition, difficulty_level) VALUES
 ('library', 'A place where books are kept for reading', 'Beginner'),
 ('collaborate', 'To work together with others', 'Intermediate');
 
+-- Additional seed data from instructor
+INSERT INTO words (word, definition, difficulty_level) VALUES 
+('courage', 'The ability to do something frightening', 'Intermediate'),
+('serendipity', 'Finding something good without looking for it', 'Advanced');
