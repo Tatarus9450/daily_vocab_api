@@ -28,4 +28,5 @@ INSERT INTO words (word, definition, difficulty_level) VALUES
 -- Additional seed data from instructor
 INSERT INTO words (word, definition, difficulty_level) VALUES 
 ('courage', 'The ability to do something frightening', 'Intermediate'),
+('swatdeekub', 'Hello', 'Beginner'),
 ('serendipity', 'Finding something good without looking for it', 'Advanced');
