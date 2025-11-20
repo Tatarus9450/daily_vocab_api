@@ -1,11 +1,10 @@
+from fastapi import APIRouter, Depends, HTTPException
 import random
 
-from fastapi import APIRouter, Depends, HTTPException
-from sqlalchemy.orm import Session
-
-from app.database import get_db
 from app.models import Word
 from app.schemas import WordResponse
+from sqlalchemy.orm import Session
+from app.database import get_db
 
 router = APIRouter()
 
@@ -19,4 +18,5 @@ def get_random_word(db: Session = Depends(get_db)):
             detail="No words available in database"
         )
 
-    return random.choice(words)
+    random_word = random.choice(words)
+    return random_word
